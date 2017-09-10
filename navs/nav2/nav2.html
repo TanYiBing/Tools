@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nav2</title>
+	<style type="text/css">
+		@charset "UTF-8";
+
+		/*css 初始化 */
+
+		html,
+		body,
+		ul,
+		li,
+		ol,
+		dl,
+		dd,
+		dt,
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		form,
+		fieldset,
+		legend,
+		img {
+		    margin: 0;
+		    padding: 0;
+		}
+
+
+		ul,
+		ol {
+		    list-style: none;
+		    /*清除列表风格*/
+		}
+
+		body {
+		    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+		    /*宋体，Unicode，统一码*/
+		    color: #666;
+		    background: #fff
+		}
+		
+		#box {
+			width: 500px;
+			height: 500px;
+			margin: 30px auto;
+			position: relative;
+		}
+
+		#fir_ul {
+			width: 400px;
+			height: 40px;
+			position: absolute;
+			left: 50px;
+			top: 20px;
+		}
+
+		.fir_li {
+			width: 80px;
+			height: 40px;
+			background: #000;
+			color: #fff;
+			float: left;
+			margin: 0 10px;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 5px;
+		}
+
+		.sec_ul {
+			position: absolute;
+			top: 40px;
+			width: 80px;
+			height: 0px;
+			overflow: hidden;
+		}
+
+		.sec_li {
+			width: 78px;
+			height: 0;
+			line-height: 40px;
+			background: #000;
+			border: 1px solid #fff;
+			color: #fff;
+			border-radius: 5px;
+		}
+
+		.fir_li:hover .sec_ul {
+			height: 168px;
+		}
+
+		.sec_ul>li:nth-child(1) {
+			transform: rotateY(0deg);
+			transition: all 1s;
+		}
+
+		.sec_ul>li:nth-child(2) {
+			transform: rotateY(0deg);
+			transition: all 1s;
+		}
+
+		.sec_ul>li:nth-child(3) {
+			transform: rotateY(0deg);
+			transition: all 1s;
+		}
+
+		.sec_ul>li:nth-child(4) {
+			transform: rotateY(0deg);
+			transition: all 1s;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(1) {
+			height: 40px;
+			transform: rotateY(360deg);
+			transition-delay: 200ms;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(2) {
+			height: 40px;
+			transform: rotateY(360deg);
+			transition-delay: 400ms;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(3) {
+			height: 40px;
+			transform: rotateY(360deg);
+			transition-delay: 600ms;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(4) {
+			height: 40px;
+			transform: rotateY(360deg);
+			transition-delay: 800ms;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div id="box">
+		<ul id="fir_ul">
+			<li class="fir_li">一级菜单
+				<ul class="sec_ul">
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+				</ul>
+			</li>
+			<li class="fir_li">一级菜单
+				<ul class="sec_ul">
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+				</ul>
+			</li>
+			<li class="fir_li">一级菜单
+				<ul class="sec_ul">
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+					<li class="sec_li">二级菜单</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

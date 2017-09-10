@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nav3</title>
+	<style type="text/css">
+		@charset "UTF-8";
+
+		/*css 初始化 */
+
+		html,
+		body,
+		ul,
+		li,
+		ol,
+		dl,
+		dd,
+		dt,
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		form,
+		fieldset,
+		legend,
+		img {
+		    margin: 0;
+		    padding: 0;
+		}
+
+
+		ul,
+		ol {
+		    list-style: none;
+		    /*清除列表风格*/
+		}
+
+		body {
+		    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+		    /*宋体，Unicode，统一码*/
+		    color: #666;
+		    background: #fff
+		}
+
+		.fir_li {
+			width: 80px;
+			height: 40px;
+			background: #000;
+			color: #fff;
+			margin: 5px;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 5px;
+			position: absolute;
+			left: 300px;
+			top: 300px;
+		}
+
+		.sec_ul {
+			width: auto;
+			height: auto;
+		}
+
+		.sec_li {
+			width: 80px;
+			height: 40px;
+			position: absolute;
+			background: #000;
+			color: #fff;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 5px;
+			left: -1000px;
+			top: -10000px;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(1) {
+			animation: secLi1 5s;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(2) {
+			animation: secLi2 5s;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(3) {
+			animation: secLi3 5s;
+			animation-delay: 1.5s;
+			animation-fill-mode: forwards;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(4) {
+			animation: secLi4 5s;
+			animation-delay: 2s;
+			animation-fill-mode: forwards;
+		}
+
+		.fir_li:hover .sec_ul>li:nth-child(5) {
+			animation: secLi5 5s;
+			animation-delay: 2.5s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes secLi1 {
+			0% {
+				left: 0;
+				top: 0;
+			}
+			50% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+				transform-origin: center -200px;
+			}
+			90% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(-180deg);
+				transform-origin: center -200px;
+			}
+			100% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+			}
+		}
+
+		@keyframes secLi2 {
+			0% {
+				left: 0;
+				top: 0;
+			}
+			50% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+				transform-origin: center -200px;
+			}
+			90% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(-180deg);
+				transform-origin: center -200px;
+			}
+			100% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+			}
+		}
+
+		@keyframes secLi3 {
+			0% {
+				left: 0;
+				top: 0;
+			}
+			50% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+				transform-origin: center -200px;
+			}
+			90% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(-180deg);
+				transform-origin: center -200px;
+			}
+			100% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+			}
+		}
+
+		@keyframes secLi4 {
+			0% {
+				left: 0;
+				top: 0;
+			}
+			50% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+				transform-origin: center -200px;
+			}
+			90% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(-180deg);
+				transform-origin: center -200px;
+			}
+			100% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+			}
+		}
+
+		@keyframes secLi5 {
+			0% {
+				left: 0;
+				top: 0;
+			}
+			50% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+				transform-origin: center -200px;
+			}
+			90% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(-180deg);
+				transform-origin: center -200px;
+			}
+			100% {
+				left: 0px;
+				top: 200px;
+				transform: rotate(0deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<ul id="fir_ul">
+		<li class="fir_li">一级菜单
+			<ul class="sec_ul">
+				<li class="sec_li">二级菜单</li>
+				<li class="sec_li">二级菜单</li>
+				<li class="sec_li">二级菜单</li>
+				<li class="sec_li">二级菜单</li>
+				<li class="sec_li">二级菜单</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
